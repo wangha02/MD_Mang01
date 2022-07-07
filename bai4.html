@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    const ALPHA = 'abcdefghijklmnopqrstuvxyzw '
+
+    let string = prompt('Nhập chuỗi để kiểm tra: ')
+
+    let arr = [];
+
+    for (let i = 0; i < string.length; i++) {
+        if (ALPHA.indexOf(string[i].toLowerCase()) !== -1 &&
+            !(string[i].toLowerCase() == ' ' && arr[arr.length - 1] == ' '))
+
+            arr.push(string[i]);
+    }
+
+    let tachMang = arr.join('').split(' ');
+
+    document.write('Chuỗi đã cho có ' + tachMang.length + ' từ.');
+
+</script>
+</body>
+</html>

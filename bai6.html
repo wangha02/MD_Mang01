@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+  let mangMau = [213,32153,21,123,1,65,1,2,3,4,5,6,7,8,9,132,68,864,64,25,44]
+  let a = +prompt("nhap so");
+  let flag = true;
+  while (flag){
+    for (let i=0;i<mangMau.length;i++){
+      if (a == mangMau[i]){
+        flag = false;
+        break;
+      } else {
+        a = +prompt("khong thuoc mang");
+      }
+    }
+  }
+  alert("thuoc mang");
+
+
+
+</script>
+</body>
+</html>
